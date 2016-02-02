@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="layout.css" type="type/css">
+<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js">
+<script src="assign.js"></script><script>
+
+var myFirebaseRef = new Firebase("https://sears.firebaseio.com/");
+
+myFirebaseRef.child("css").on("value", function(snapshot) {
+  document.getElementById("box").innerHTML=snapshot.val();  // Alerts "San Francisco"
+});
+
+myFirebaseRef.child("id").on("value", function(snapshot) {
+  document.getElementById("box1").innerHTML=snapshot.val();  // Alerts "San Francisco"
+});
+
+myFirebaseRef.child("news").on("value", function(snapshot) {
+  document.getElementById("box2").innerHTML=snapshot.val();  // Alerts "San Francisco"
+});
+
+myFirebaseRef.child("var").on("value", function(snapshot) {
+  document.getElementById("box3").innerHTML=snapshot.val();  // Alerts "San Francisco"
+});
+
+</script>
+<script src="assign.js"></script>
+</head>
+
+    <body>
+
+       <div id="header">
+
+       <p><h1>SEARS HOLDINGS</p></h1> <p><h1>INDIA</h1></p>
+
+       </div>
+
+<div id="nav" align="center">
+
+<img src="culture_1.jpg" height="200px" width="300"/>
+
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean vel leo vitae enim luctus ultrices. 
+    Integer eget venenatis sem, ut posuere dolor. 
+    Mauris interdum tellus in ipsum scelerisque convallis. 
+    Etiam non sem cursus, sodales mauris in, scelerisque magna.</p>
+
+<img src="culture_1.jpg" height="200px" width="300"/>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean vel leo vitae enim luctus ultrices. 
+    Integer eget venenatis sem, ut posuere dolor. 
+    Mauris interdum tellus in ipsum scelerisque convallis. 
+    Etiam non sem cursus, sodales mauris in, scelerisque magna</p>
+
+</div>
+<div class="main">
+          <div id="section" style=" align="left">
+                <h2 style="text-align:center;padding-left:125px;">Latest News</h2>
+
+  
+
+	<div style="border:1px solid black ">
+          <div id="box1" ></div>
+		<a href="C:\Users\vshriv0\Documents\blog\blog1.html"><button type="button">Read More</button>      
+	 </div>
+
+	<div style="border:1px solid black ">
+          <div id="box2" ></div>
+		<a href="C:\Users\vshriv0\Documents\blog\blog1.html"><button type="button">Read More</button>      
+	 </div>
+
+	<div style="border:1px solid black ">
+          <div id="box3" ></div>
+		<a href="C:\Users\vshriv0\Documents\blog\blog1.html"><button type="button">Read More</button>      
+	 </div>
+
+<div style="border:1px solid black ">
+          <div id="box" ></div>
+		<a href="C:\Users\vshriv0\Documents\blog\blog1.html"><button type="button">Read More</button></a>      
+	 </div>
+        
+       </div>
+      </div>
+
+             
+<div id="footer">
+
+<div id="leftfoot"><h3>Address:</h3><br>
+<i class="fa fa-institution" style="font-size:20px">Eon IT park,kharadi,pune.</i>
+
+<br>
+<br>
+<br>
+<i class="fa fa-phone-square" style="font-size:20px">91-7276255507</i>
+
+
+</div>
+
+<div id="rightfoot"><h3 align="center">Contact:</h3><br>
+   <form  name="fname" onsubmit="return ValidateForm()">
+
+  E-mail:&nbsp;   <input style="margin-bottom:5px; margin-left:15px" type="email" name="email" placeholder="vaibhav.shri@searshc.com" id="text1"><br>
+  first name: <input style="margin-bottom:5px" type="text" name="LastName" placeholder="vaibhav" id="text2" ><br>
+  Message:&nbsp  <textarea rows="4" cols="50" name="text3" placeholder="type some text"></textarea>
+  <input style="margin-left:685px;" type="submit" value="Submit">
+  <p id="output"></p>
+   </form>
+ 
+
+</div>
+
+</div>
+ 
+
+</body>
+
+</html>
