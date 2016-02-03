@@ -8,10 +8,11 @@
 #nav {
     line-height:30px;
     background-color:gray;
-    height:800px;
+    height:1000px;
     width:450px;
     float:left;
-    padding:5px;	      
+    padding:5px;	
+	
 }
 #section {
     width:650px;
@@ -22,7 +23,6 @@
 
 #sec{
     width:950x;
-    
     margin:10px;
     padding:10px;	 	 
 }
@@ -38,38 +38,45 @@
 #leftfoot
 {
 float:left;
-
 width:50%;
 }
 #rightfoot{
 text-align:left;
 
 }
+
+
+.inner{
+ margin-bottom:20px;
+ margin-left:100px;
+ width:600px;
+}
 #box1
 {
-	margin:30px;
-	width:110%;
+	margin:50px;
+	margin-left:100px;
+
         height:40%;
         
 }
 #box2
 {
-	margin:30px;
-	width:110%;
+	margin:50px;
+
         height:40%;
         
 }
 #box3
 {
-	margin:30px;
-	width:110%;
+	margin:50px;
+	
         height:40%;
 }
 
 #box
 {
-	margin:30px;
-	width:110%;
+	margin:50px;
+
         height:40%;
 }
 
