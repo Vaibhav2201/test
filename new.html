@@ -8,13 +8,36 @@
 
 <link rel="stylesheet" href="layout.css" type="type/css">
 <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js">
-<script src="assign.js"></script><script>
+<script src="assign.js"></script>
+<script>
 
+
+var var1=window.location.hash.substring(1);
+
+if(var1=="news1"){
 var myFirebaseRef = new Firebase("https://sears.firebaseio.com/");
-
 myFirebaseRef.child("news1").on("value", function(snapshot) {
   document.getElementById("box").innerHTML=snapshot.val();  // Alerts "San Francisco"
 });
+}
+else if(var1 == "news2"){
+var myFirebaseRef = new Firebase("https://sears.firebaseio.com/");
+	myFirebaseRef.child("news2").on("value", function(snapshot) {
+  document.getElementById("box").innerHTML=snapshot.val();  // Alerts "San Francisco"
+});
+}
+else if(var1 == "news3"){
+var myFirebaseRef = new Firebase("https://sears.firebaseio.com/");
+	myFirebaseRef.child("news3").on("value", function(snapshot) {
+  document.getElementById("box").innerHTML=snapshot.val();  // Alerts "San Francisco"
+});
+}
+else if(var1 == "news4"){
+var myFirebaseRef = new Firebase("https://sears.firebaseio.com/");
+	myFirebaseRef.child("news4").on("value", function(snapshot) {
+  document.getElementById("box").innerHTML=snapshot.val();  // Alerts "San Francisco"
+});
+}
 
 
 

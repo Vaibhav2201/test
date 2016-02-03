@@ -8,7 +8,7 @@
 #nav {
     line-height:30px;
     background-color:gray;
-    height:1000px;
+    height:1100px;
     width:450px;
     float:left;
     padding:5px;	
@@ -19,6 +19,13 @@
     float:left;
     margin:10px;
     padding:10px;	 	 
+}
+
+.divset{
+overflow:hidden;
+max-width:100ch;
+white-space:nowrap;
+text-overflow:ellipsis;
 }
 
 #sec{
